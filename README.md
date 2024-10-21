@@ -106,8 +106,6 @@ Before getting started, ensure you have the following installed:
 
 ## Contact Information
 
-Provide a way for others to reach out if they have questions or want to connect:
-
 - Email: syap020@e.ntu.edu.sg
 - GitHub: [Shawn](https://github.com/your-username)
 
