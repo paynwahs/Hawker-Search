@@ -1,31 +1,26 @@
-# Hawker Search NTU FYP
+# HawkerSearch (NTU FYP)
 
-Hawker Search is a mobile-focused web application that leverages Large Language Models (LLMs) to deliver personalized hawker stall recommendations.
+HawkerSearch is a mobile-focused web application that leverages Large Language Models (LLMs) to deliver personalised hawker stall recommendations to customers, as a novel way for elderly and/or low tech literacy hawkers to market their stalls.
 
 ## Features
 
-- **Stall Owner and Customer Interfaces**: Separate user interfaces for stall owners and customers.
+### Customer Interface
 
-- **Customer-Oriented Functionality**: Customers can input their food preferences into a search box (e.g., “I want to eat something spicy”) and receive personalized hawker stall recommendations based on those preferences.
+-   **Powerful Search Function**: Customers can input their food preferences into a search box (e.g., “I want to eat something spicy”) and receive personalised hawker stall recommendations based on those preferences.
+-   **Hawker Stall Information**: Users can view the details of any recommended hawker stall which include location, opening hours, certifications (e.g. halal, vegetarian), and menus (i.e. food items and their descriptions).
+-   **Favourite Hawkers**: Customers can "favourite" hawker stalls they want to visit and view the entire list of favourited hawkers on a dedicated page.
 
-- **Stall Information**: Users can view recommended hawker stall details, including opening hours, metadata (e.g., Halal, vegetarian), and food menus.
+### Hawker Owner Interface
 
-**Stall Owner Exclusive Interface**
-
-- **User-Friendly Onboarding**: A research-backed onboarding process ensures that elderly hawkers or those with low tech literacy can easily join the platform.
-
-- **Analytics Dashboard**: A one-page marketing analytics page provides hawkers with performance data, search keyword data, and AI-powered insights.
-
-### Customer Interface Features
-
-- **Favorite Hawkers**: Customers can "favorite" hawker stalls they enjoy and view a list of favorited hawkers on a single page.
+-   **Research-Backed Onboarding Flow**: An onboarding process designed with well-tested user interface and experience (UI/UX) principles tailored to elderly and/or low tech literacy hawkers, so that they can easily join our platform.
+-   **Insights Dashboard**: A marketing analytics page that provides hawkers with platform performance data (e.g. how many customers they were recommended to), top search keywords (e.g. many customers searched for "spicy"), and actionable business insights.
 
 ## Tech Stack
 
-- **Frontend**: Next.js
-- **Backend**: Supabase
-- **Database**: PostgreSQL (Managed via Supabase)
-- **LLM integration**: OpenAI GPT, OpenAI Embedding Model
+-   **Frontend**: Next.js, React
+-   **Backend**: Supabase
+-   **Database**: PostgreSQL (Managed via Supabase)
+-   **LLM integration**: OpenAI GPT, OpenAI Embedding Model
 
 ---
 
@@ -37,59 +32,59 @@ Follow these steps to set up the project on your local machine for development p
 
 Before getting started, ensure you have the following installed:
 
-- [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started)
-- [Docker](https://www.docker.com/get-started)
-- [Node.js and npm](https://nodejs.org/en/download/) (for running the frontend)
+-   [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started)
+-   [Docker](https://www.docker.com/get-started)
+-   [Node.js and npm](https://nodejs.org/en/download/) (for running the frontend)
 
 ### Steps
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-   ```
+    ```bash
+    git clone <repository-url>
+    cd <repository-folder>
+    ```
 
 2. **Install dependencies**:
 
-   For the frontend:
+    For the frontend:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 3. **Start Supabase locally**:
 
-   Supabase uses Docker to run its local instance. Start the Supabase services using the following command:
+    Supabase uses Docker to run its local instance. Start the Supabase services using the following command:
 
-   ```bash
-   supabase start
-   ```
+    ```bash
+    supabase start
+    ```
 
-   > **Note**: The first run may take some time as Docker downloads the necessary images.
+    > **Note**: The first run may take some time as Docker downloads the necessary images.
 
 4. **Configure environment variables**:
 
-   If this is your first time setting up Supabase, you’ll need to configure your `.env.local` file with the Supabase `url` and `anon_key`. You can do this by running:
+    If this is your first time setting up Supabase, you’ll need to configure your `.env.local` file with the Supabase `url` and `anon_key`. You can do this by running:
 
-   ```bash
-   npx supabase status -o env \
-   --override-name api.url=NEXT_PUBLIC_SUPABASE_URL \
-   --override-name auth.anon_key=NEXT_PUBLIC_SUPABASE_ANON_KEY | \
-       grep NEXT_PUBLIC > .env.local
-   ```
+    ```bash
+    npx supabase status -o env \
+    --override-name api.url=NEXT_PUBLIC_SUPABASE_URL \
+    --override-name auth.anon_key=NEXT_PUBLIC_SUPABASE_ANON_KEY | \
+        grep NEXT_PUBLIC > .env.local
+    ```
 
 5. **Run the application**:
 
-   Now you can run the development server with:
+    Now you can run the development server with:
 
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
 6. **Access the application**:
 
-   Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the application running.
+    Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the application running.
 
 ---
 
@@ -106,13 +101,14 @@ Before getting started, ensure you have the following installed:
 
 ## Contact Information
 
-- Email: syap020@e.ntu.edu.sg
-- GitHub: [Shawn](https://github.com/your-username)
+If you have any questions, you may contact either:
+
+-   GitHub: [Yap Yu Xiang, Shawn](https://github.com/your-username)
+-   Email: syap020@e.ntu.edu.sg
 
 or
 
-- Email: malt0001@e.ntu.edu.sg
-- Github: [Malthus](https://github.com/malthusohtj)
-
+-   GitHub: [Malthus Oh Teng Jie](https://github.com/malthusohtj)
+-   Email: malt0001@e.ntu.edu.sg
 
 ---
